@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <link rel="stylesheet" type="text/css" href="ejercicio2.css">
+</head>
+<body>
+    <form id="registro_formulario">
+        <label for="id">Identificador</label>
+        <input type="text" name="id" id="id" pattern="^\w{1}\d{8}\w{1}$" required> <span id="errorID"></span>
+        <br>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" maxlength="50" pattern="\w\s\w\s*\w*{7,50}" required> <span id="errorNombre"></span>
+        <br>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos" maxlength="50" pattern="\w\s\w\s*\w*{7,50}" required> <span id="errorApellidos"></span>
+        <br>
+        <label for="fecha">Correo Electronico</label> 
+        <input type="date" name="fecha" id="fecha" required/> <span id="errorFecha"></span>
+        <br>
+        <label for="correo">Correo Electronico</label> 
+        <input type="email" name="correo" id="correo" pattern=".{1,20}@\w{1,20}\.\w{2,3}" required> <span id="errorCorreo"></span>
+        <br>
+        <label for="telefono">Telefono</label> 
+        <input type="text" name="telefono" id="telefono" pattern="^\+\d{2,3}-\d{9}"> <span id="errorTelef"></span>
+        <br>
+        <label for="edad">Edad</label>
+        <select id="edad" name="edad" required>
+            <option value=""></option>
+            <option value="nino">Niño</option>
+            <option value="adulto">Adulto</option>
+            <option value="jubilado">jubilado</option>
+        </select>
+        <br>
+        <label for="csocio">¿Club de ski?
+        </label>
+        <input type="checkbox" name="csocio" id="csocio"> 
+        <br>
+        <label for="nsocio">Nº Socio:</label>
+        <input type="number" id="nsocio" name="nsocio" pattern="^[1-9][0-9]{4}|10000" > <span id="errorSocio"></span>
+        <br>
+        <label for="categorias">Categorias</label>
+        <input type="radio" name="categorias" value="Infantil">Infantil
+        <input type="radio" name="categorias" value="Juvenil">Juvenil
+        <input type="radio" name="categorias" value="Senior">Senior
+        <br>
+        <input type="submit" id="enviar" value="Enviar"/>
+    </form>
+    <script src="ejercicio2.js"></script>
+</body>
+</html>
