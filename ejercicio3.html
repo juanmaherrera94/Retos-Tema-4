@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+
+</head>
+<body>
+<p>Fecha y hora de creación: en formato «dd/mm/aaaa hh:mm»</p>
+<label for="fecha">📆Fecha y hora de creacion</label>
+<input type="text" name="fecha" id="fecha" placeholder="dd/mm/aaaa hh:mm">
+<button id="botonFecha">Validar</button>
+<span id="resultadoFecha"></span>
+<br>
+<p>Cocinero: será un nombre en clave formado por dos letras en mayúscula, un símbolo y
+    cuatro dígitos (ej. WW$1234)</p>
+    <label for="cocinero">🎩Cocinero</label>
+    <input type="text" name="cocinero" id="cocinero" placeholder="WW$1234">
+    <button id="botonCocinero">Validar</button>
+    <span id="resultadoCocinero"></span>
+<br>
+<p>Destinatario: estará formado por dos o tres letras mayúsculas correspondientes al
+    estado, un guión bajo, el nombre de la ciudad en minúsculas, dos puntos, y el código
+    de distrito de 4 digitos (ej. NM_alburquerque:1234).</p>
+    <label for="destinatario">🤵Destinatario</label>
+    <input type="text" name="destinatario" id="destinatario" placeholder="NM_alburquerque:1234">
+    <button id="botonDestinatario">Validar</button>
+    <span id="resultadoDestinatario"></span>
+<br>
+<p>Gramos: será un número del 1000 al 5000.</p>
+
+    <label for="Gramos">🧂Gramos</label>
+    <input type="text" name="gramos" id="gramos" placeholder="Del 1000 al 5000">
+    <button id="botonGramos">Validar</button>
+    <span id="resultadoGramos"></span>
+<br>
+<p>Composición: estará formado por una cantidad en gramos seguida de dos conjuntos de
+    una o dos letras seguidas o no de un número. (ej. 200gC3OH7)</p>
+    <label for="compo">❗Composicion</label>
+    <input type="text" name="compo" id="compo" placeholder="200gC3OH7">
+    <button id="botonCompo">Validar</button>
+    <span id="resultadoCompo"></span>
+<br>
+<p> Número de cuenta de EEUU: supongamos que un número de cuenta estadounidense
+    tiene el siguiente formato:
+    .1 Dos letras: suponemos que el valor de cada letra es del 1 al 26 (no hay ñ ni ll).
+    .2 Dos dígitos: debe corresponderse con la suma de la primera letra y la segunda: en
+    caso de que sea menor que 10 se pone el 0 delante.
+    .3 Un guión.
+    .4 Doce dígitos de cuenta
+    .5 Un guión.
+    .6 Dos dígitos de control: los dos primeros deben ser la suma de los 6 primeros dígitos
+    de la cuenta dividido entre 6 y extrayendo solamente su parte entera; y los dos
+    últimos exactamente igual, pero con los 6 siguientes.
+    .7 Si el número está correcto se colocará en un campo de texto al lado del anterior, pero
+    sin guiones: solamente los números y las letras</p>
+    <label for="nCuenta">🏦Numero de cuenta EEUU</label>
+    <input type="text" name="nCuenta" id="nCuenta" placeholder="AA00-000000000000-00">
+    <button id="botonNcuenta">Validar</button>
+    <span id="resultadoNcuenta"></span>
+    <script src="ejercicio3.js"></script>
+</body>
+</html>

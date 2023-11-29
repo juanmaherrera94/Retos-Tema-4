@@ -1,4 +1,4 @@
-window.onload=iniciar;
+window.addEventListener("load",iniciar);
 
 //funcion que cuando se haga click en el boton enviar se ejecute la funcion validar
 function iniciar() {
