@@ -15,3 +15,11 @@
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+.borde {
+    border: double 8px red;
+  }
+  
+  img{
+    width:180px;
+  }
