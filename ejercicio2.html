@@ -7,6 +7,12 @@
     <link rel="stylesheet" type="text/css" href="ejercicio2.css">
 </head>
 <body>
+    <div id="contadores">
+        <button type="reset" id="resetFor">Eliminar forfaits</button>
+        <p id="forfaits"></p> 
+        <button type="reset" id="resetSoc">Eliminar socios</button>
+        <p id="socios"></p>
+    </div>
     <form id="registro_formulario">
         <label for="id">Identificador</label>
         <input type="text" name="id" id="id" pattern="^\w{1}\d{8}\w{1}$" required> <span id="errorID"></span>
@@ -49,5 +55,6 @@
         <input type="submit" id="enviar" value="Enviar"/>
     </form>
     <script src="ejercicio2.js"></script>
+    <script src="ejercicio4.js"></script>
 </body>
 </html>
